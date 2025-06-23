@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Perfil do Aluno - Fase 02</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    Projeto Perfil do Aluno
+</header>
+
+<div class="container">
+    <div class="left">
+        <img id="mainPhoto" src="otavio.jpeg" alt="Foto de Perfil">
+        <div class="thumbnails">
+            <img src="otavio2.jpg" alt="Perfil 1" onclick="changePhoto(this.src)">
+            <img src="galo.jpeg" alt="Perfil 2" onclick="changePhoto(this.src)">
+            <img src="otavio.jpeg" alt="Perfil 3" onclick="changePhoto(this.src)">
+        </div>
+    </div>
+
+    <div class="right">
+        <h2>Otávio Martins Oliveira</h2>
+        <p><strong>Endereço:</strong> Augusto Magalhães, 140, Centro - Nova Lima, MG - 34000-105</p>
+        <p><strong>Email:</strong> <input type="text" id="email" value="otaviomgalo@gmail.com"></p>
+        <p><strong>CPF:</strong> <input type="text" id="cpf" placeholder="000.000.000-00"></p>
+
+        <h3>UC's já cursadas:</h3>
+        <ul id="ucList">
+            <li>Vida e Carreira</li>
+            <li>Programação de Soluções Computacionais</li>
+            <li>Sistemas Computacionais e Segurança</li>
+            <li>Ambientes Computacionais e Conectividade</li>
+            <li>Inovação, sustentabilidade e competitividade empresarial</li>
+            <li>Modelos, métodos e técnicas da engenharia de software</li>
+        </ul>
+        <button id="addUC">Adicionar nova UC</button>
+
+        <h3>Perfil Pessoal:</h3>
+        <div id="personalProfile">
+            <p>Olá, me chamo Otávio, sou nascido e criado em Nova Lima, tenho 22 anos, sou estudante do curso de Análise e desenvolvimento de sistemas na UNIBH...</p>
+        </div>
+        <input type="text" id="newDescription" placeholder="Adicionar nova descrição...">
+        <button id="addDescription">Adicionar Descrição</button>
+
+        <h3>Perfil Profissional/Acadêmico:</h3>
+        <p>Durante a jornada do curso, o que mais me chamou atenção foram as aulas e matérias de programação...</p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ot%C3%A1vio-martins-525883238/" target="_blank">
+                <img src="linkeding.jpeg" alt="LinkedIn">
+            </a>
+            <a href="https://www.instagram.com/otavioxjs/" target="_blank">
+                <img src="instagram.jpeg" alt="Instagram">
+            </a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    Projeto Desenvolvimento Web  |  Fase 02
+</footer>
+
+</body>
+</html>
